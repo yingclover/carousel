@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carousel</title>
+    <link type="text/css" rel="stylesheet" href="carousel.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="carousel.js"></script>
+</head>
+<body style="padding: 50px">
+<div class="J_Poster poster-main" data-setting='{
+                                                                                                "width":800,
+                                                                                                "height":285,
+                                                                                                "posterWidth":574,
+                                                                                                "posterHeight":285,
+                                                                                                "scale":0.8,
+                                                                                                "autoPlay":true,
+                                                                                                "delay":2000,
+                                                                                                "speed":300,
+                                                                                                "verticalAlign":"middle"
+}'>
+    <div class="poster-btn left"></div>
+    <ul class="poster-list">
+        <li class="poster-item"><a href="#"><img src="index1.jpg" width="100%"></a> </li>
+        <li class="poster-item"><a href="#"><img src="index2.jpg" width="100%"></a> </li>
+        <li class="poster-item"><a href="#"><img src="index3.jpg" width="100%"></a> </li>
+        <li class="poster-item"><a href="#"><img src="index4.jpg" width="100%"></a> </li>
+        <li class="poster-item"><a href="#"><img src="index5.jpg" width="100%"></a> </li>
+
+    </ul>
+    <div class="poster-btn right"></div>
+</div>
+<script>
+
+    $(function(){
+        Carousel.init($(".J_Poster"));
+    });
+</script>
+
+</body>
+</html>
+
+
